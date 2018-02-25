@@ -26,20 +26,4 @@ export class PageContactComponent {
 
 
 
-  save(name, email, mobile, subject, message): void {
-    this.data['name'] = name;
-    this.data['email'] = email;
-    this.data['mobile'] = mobile;
-    this.data['subject'] = subject;
-    this.data['message'] = message;
-    console.log(this.data);
-    // send the message and get a callback with an error or details of the message that was sent
-    PageContactComponent.server.send({
-      text: "i hope this works",
-      from: "gogitarakesh@gmail.com",
-      to: "gogitarakesh@gmail.com",
-      subject: "testing emailjs"
-    }, function (err, message) { console.log(err || message); });
-    //add request to send email or into mysql
-  }
-}
+ }
