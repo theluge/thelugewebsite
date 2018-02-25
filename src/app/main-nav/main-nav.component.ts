@@ -7,6 +7,6 @@ import {Component} from "@angular/core";
 
 export class MainNavComponent {
 
-   title: string = "The Luge"
+   public title: string = "The Luge"
 
 }
